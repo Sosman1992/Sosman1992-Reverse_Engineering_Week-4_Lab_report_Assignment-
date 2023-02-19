@@ -1,5 +1,21 @@
-# Sosman1992-Reverse_Engineering_Week-4_Lab_report_Assignment-
+# Week 4 - x86 Disassembly
 
+The Week's Assignment and Lab focus was on review assembly language and what compilers do when they turn C code into machine code. A review was conducted on windows programs to learn how they are actually formatted. Ghidra tool was the software used in the reverse engineering of the file for it key
+
+---
+# ANSWERS TO THE QUESTIONS
+
+1. Both Machine code and assembly are low-level programming languages, but they differ in their level of abstraction and their representation where as, Machine code is a language that is directly executed by a computer's central processing unit (CPU) and in addition it consists of a series of binary instructions that are specific to a particular CPU architecture, and it is difficult for humans to read and write directly, Assembly language is a human-readable representation of machine code that uses mnemonic codes to represent the binary instructions of machine code, making it easier for programmers to read and write. Assembly language is specific to a particular CPU architecture, but it can be translated into machine code using an assembler.
+
+2. if ESP was initially pointing to memory address 0x001270A4 and a push eax instruction is executed, ESP will be decremented by 4 bytes to 0x001270A0, and the contents of the EAX register will be stored at memory address 0x001270A0. Therefore, ESP will now be pointing to memory address 0x001270A0
+
+3. A stack frame is a data structure used by a computer program during its execution to store information such as function's arguments, local variables, return address about a particular function call.
+
+4. Variables(both local and global) and other data (constant and initialized) that have a fixed, known value at compile-time and are accessible throughout the program's execution are what you will find in the data section of a RAM.
+
+5. The heap is a section of memory used for dynamic memory allocation. 
+
+6.
 
 ##
 After downloading the file from the website, I extracted the downloaded zip file to my Desktop and provided with a file named `keyg3nme` I run the file `keyg3nme` in my linux terminal using `file command` to ascertain the type of file; from the output it showed that `keyg3nme` is 64-Bit file. In addition also run `strings` command on this executable to see the printable strings contained within this binary and I found out some interesting  strings including but not limited: `Enter your key :`, `Good job mate, now go keygen me`, `nope`.
